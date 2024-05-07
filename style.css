@@ -1,0 +1,139 @@
+
+/* Font and Color */
+
+.navbar-primary,
+.navbar-secondary {
+    font-family: 'Poppins', sans-serif;
+}
+.navbar-primary {
+    background-color: #192f59;
+}
+
+
+
+/* Navbar Utama*/
+
+.navbar-primary .navbar-nav {
+    margin-right: 225px;
+    margin-left: auto;
+}
+.navbar-primary .navbar-nav .nav-item .nav-link {
+    color: white !important;
+    font-weight: normal;
+}
+.pendaftaran-box {
+    background-color: #3db166;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    right: 45px;
+    z-index: 1;
+}
+
+
+
+/* Navbar Secondary */
+
+.navbar-secondary {
+    background-color: #ffffff;
+}
+.navbar-secondary .navbar-brand {
+    margin-right: auto;
+}
+.navbar-secondary .navbar-brand img {
+    width: 250px;
+    height: auto;
+}
+.navbar-secondary .navbar-nav {
+    display: flex;
+    align-items: center;
+}
+.navbar-secondary .navbar-nav .nav-link {
+    color: #192f59;
+    margin-left: 20px;
+    position: relative;
+    transition: color 0.3s;
+}
+.navbar-secondary .navbar-nav .nav-link:hover {
+    color: #3db166;
+}
+.navbar-secondary .navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #3db166;
+    transition: width 0.3s;
+}
+.navbar-secondary .navbar-nav .nav-link:hover::after {
+    width: 100%;
+}
+.navbar-secondary .search-icon {
+    padding-left: 20px;
+    margin-left: auto;
+    margin-right: 30px;
+}
+.navbar-text {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+
+
+/* Carousel */
+
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: transparent;
+    border: none;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.carousel-control-prev {
+    left: 20px;
+}
+.carousel-control-next {
+    right: 20px;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: black;
+    border-radius: 90%;
+    width: 80%;
+    height: 80%;
+}
+
+/* Image */
+.fullscreen-bg {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+}
+.fullscreen-bg__image {
+    max-width: 100%;
+    max-height: 100%;
+}
+.content {
+    padding-top: 100px;
+}
